@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
-@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
@@ -434,6 +434,9 @@ body {
     -webkit-animation-duration: calc( 1s * 0.75);
     animation-duration: calc( 1s * 0.75); }
 
+img {
+  max-width: 100%; }
+
 nav {
   background: #232323;
   display: -webkit-box;
@@ -445,11 +448,17 @@ nav {
   padding: 0 20px 0 20px; }
 
 nav > .left a {
-  color: #ccc; }
+  color: #ccc;
+  margin-left: 15px; }
 
 nav > .right > a {
   color: #ccc;
   padding: 15px; }
+
+nav img {
+  float: left;
+  height: 20px;
+  border-radius: 50%; }
 
 .left {
   -webkit-box-ordinal-group: 2;
@@ -470,6 +479,9 @@ p, a {
 a {
   text-decoration: none;
   color: #6A6A6A; }
+
+a:hover {
+  cursor: pointer; }
 
 h1 {
   font-size: 4em;
@@ -539,9 +551,6 @@ body {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%); }
-
-img {
-  max-width: 100%; }
 
 .content {
   display: -webkit-box;
@@ -681,10 +690,6 @@ hr {
         -ms-flex-direction: column;
             flex-direction: column;
     justify-items: left; }
-  .header > div.left, .header > div.right {
-    width: 100%; }
-  .header > div.right {
-    padding-left: 10px; }
   .contact > .left {
     min-width: 100%; }
   .contact > .right {
@@ -737,7 +742,7 @@ hr {
             transform: translateX(-15px); } }
 
 .quote {
-  margin: 40px 0px; }
+  margin: 40px 10px; }
 
 .footer {
   font-size: 0.8em;
