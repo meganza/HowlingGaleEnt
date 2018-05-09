@@ -758,7 +758,7 @@ hr {
 .center {
   text-align: center; }
 
-input[type=text], textarea {
+input[type=text], input[type=email], textarea {
   width: 100%;
   padding: 10px;
   border: none;
@@ -770,7 +770,7 @@ input[type=text], textarea {
   resize: none;
   border-bottom: 2px solid #d2d2d2; }
 
-input[type=submit] {
+button[type=submit] {
   margin-top: 20px;
   background-color: #ccc;
   color: #6A6A6A;
@@ -782,7 +782,7 @@ input[type=submit] {
   -webkit-transition: .5s;
   transition: .5s; }
 
-input[type=submit]:hover {
+button[type=submit]:hover {
   background-color: #ddd;
   color: #888; }
 
