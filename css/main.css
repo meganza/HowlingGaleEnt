@@ -556,6 +556,10 @@ body {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%); }
 
+.overlay p, .overlay a {
+  font-size: 1.5em;
+  padding: 0px 30px; }
+
 .content {
   display: -webkit-box;
   display: -ms-flexbox;
